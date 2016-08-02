@@ -1,1 +1,0 @@
-# shattering-stereotypes.github.io
