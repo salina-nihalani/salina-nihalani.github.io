@@ -98,5 +98,19 @@ body {
     .splash-title {font-size: 1.5em;}
 }
 ul{
-	list-style-image: url('boxx.png');  
+	list-style-image: url('box.png');  
+	display: inline
+}
+#navlist li
+ {
+ display: inline;
+ list-style-type: none;
+ padding-right: 95px;
+ }
+ .center {
+  display: block;
+  margin-left: 250px;
+  margin-right: auto;
+  float:center;
+  width: 1500px;
 }
