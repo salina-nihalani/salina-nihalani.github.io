@@ -1,0 +1,204 @@
+<!doctype html>
+
+<html>
+<head>
+<style>
+body {
+	height: auto;
+	font: normal 1em/1.5em 'Open Sans', sans-serif; 		
+	color: #333; 
+	background-color:#F7C8CF;
+	background-size:cover;
+	margin-top:-20px;
+}
+.oval{
+	position:absolute;
+	z-index:-1;
+	background-image:url(us.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	filter: alpha(opacity=90);
+	opacity:.;
+	width:100%;
+	height:800px;
+	padding:0px;
+}
+<span class="s1">
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+</span>@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.fade-in {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1; 
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:0.3s;
+    -moz-animation-duration:0.3s;
+    animation-duration:0.3s;
+
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+
+.fade-in {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1; 
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:0.3s;
+    -moz-animation-duration:0.3s;
+    animation-duration:0.3s;
+
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+	
+	text-align:center;
+}
+
+.splash-title {
+    color:#E53095;
+    font-size: 3em;
+    text-shadow: 0 3px 5px #ED1B69;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+	text-align:center;
+}
+
+
+.title{
+	color:#F478A6;
+	text-shadow: 0 2px 0px #F19B9D;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    animation-delay: 3s;
+	text-align:center;
+	text-decoration:none;
+	position:relative;
+	margin: 0px;
+}
+
+@media all and (max-width: 690px) {
+    header h1 { width: 100%; text-align: center; margin:10px;}
+    header nav { float: none; display: inline-block; margin: 0px; }
+      .splash-title {font-size: 2em;}
+}
+
+
+@media all and (max-width: 480px) {
+    .splash-title {font-size: 1.5em;}
+}
+ul{
+	list-style-image:url(box);  
+	display: inline
+}
+#navlist li
+ {
+ display: inline;
+ list-style-type: none;
+ padding-right: 95px;
+ }
+ .center {
+  display: block;
+  margin-left: -75px;
+  margin-right: auto;
+  float:center;
+  width: 1500px;
+}
+</style>
+<meta charset="utf-8">
+<title>Shattering Stereotypes</title>
+<script>
+	 function myFunction(){
+		 var image = document.getElementById("welcome");
+		 image.src = "icon.jpg"
+	 }
+	 function myFunction2(){
+		 var image = document.getElementById("welcome2");
+		 image.src = "icon2.jpg"
+	 }
+	 function myFunction3(){
+		 var image = document.getElementById("welcome3");
+		 image.src = "icon3.jpg"
+	 }
+	 function myFunction4(){
+		 var image = document.getElementById("welcome4");
+		 image.src = "icon4.jpg"
+	 }
+	 function myFunction5(){
+		 var image = document.getElementById("welcome5");
+		 image.src = "icon5.jpg"
+	 }
+	  function tFunction(){
+		 var image = document.getElementById("welcome");
+		 image.src = "box.png"
+	 }
+	 function uFunction(){
+		 var image = document.getElementById("welcome2");
+		 image.src = "box.png"
+	 }
+	 function vFunction(){
+		 var image = document.getElementById("welcome3");
+		 image.src = "box.png"
+	 }
+	 function wFunction(){
+		 var image = document.getElementById("welcome4");
+		 image.src = "box.png"
+	 }
+	 function xFunction(){
+		 var image = document.getElementById("welcome5");
+		 image.src = "box.png"
+	 }
+	</script>
+</head>
+
+<body>
+<div class="oval" ></div>
+
+<span class="s1">
+	<div class="splash fade-in">
+    </div>
+</span>  
+<h1 class="splash-title fade-in">SHATTERING STEREOTYPES</h1>
+  
+  <span class="s1"><div class="splash fade-in">
+  
+<div> </span> <h1><a class="fade-in title" href="#">Girls Can't...</a></h1></div>
+
+<div id="navcontainer" class="center" >
+ <ul id="navlist"> 
+ <li id="active"><a href="BeInCharge.html"><img src="box.png" id="welcome" onMouseOver="myFunction()" onMouseOut="tFunction()"></a></li>
+ <li><a href="MakeMoney.html"><img src="box.png" id="welcome2" onMouseOver="myFunction2()" onMouseOut="uFunction()"></a></li>
+ <li><a href="college.html"
+ ><img src="box.png" id="welcome3" onMouseOver="myFunction3()" onMouseOut="vFunction()"></a></li>
+ <li><a href="strong.html"><img src="box.png" id="welcome4" onMouseOver="myFunction4()" onMouseOut="wFunction()"></a></li>
+ <li><a href="galscode.html"><img src="box.png" id="welcome5" onMouseOver="myFunction5()" onMouseOut="xFunction()"></a></li>
+ </ul>
+ </div> 
+
+</body>
+</html>
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+</body>
+</html>
