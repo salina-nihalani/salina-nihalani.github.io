@@ -16,8 +16,9 @@ ul {
 }
 .text{
 	text-align: center;
-	transform:translate(50px,10px);
-	display:inline-block;
+	transform:translate(200px,-500px);
+	display:inline-block; 
+	margin-right: 700px;
 }
 li a {
     display: block;
@@ -73,13 +74,97 @@ p2{
     margin-left: 1100px;
 	top:-220px;
 	transform:scaleX()
+}
+.opp{
+	line-height: 300%;
 	
 }
-
+ html, body {
+        height: 100%;
+        margin: auto;
+        padding: 0;
+      }
+      #map {
+        height: 500px;
+		width:700px;
+		transform:translate(40%,-50%);
+	  }
+.Resources{
+	text-align: center;
+	
+}
+.Role{
+	text-align: center;
+}
+.youtube{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.map{
+	text-align: center;
+}
+.more{
+	text-align:center;
+}
 </style>
 
 <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Girls CAN code!</title>
 <title>Untitled Document</title>
+
+ 
+<script>
+
+      function initMap() {
+        var myLatLng = {lat: 42.349519, lng: -71.080586}; 
+		var myLatLng2 ={lat: 42.365785, lng: -71.092459}; 
+		var myLatLng3 ={lat: 42.364518, lng:-71.089280}; 
+		var myLatLng4 ={lat: 42.363053, lng:-71.091528}; 
+		var myLatLng5 ={lat: 42.297828, lng:-71.219256}; 
+		
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Microsoft!'
+        });
+		var marker2 = new google.maps.Marker({
+          position: myLatLng2,
+          map: map,
+          title: 'Twitter'
+        });
+		var marker3 = new google.maps.Marker({
+          position: myLatLng3,
+          map: map,
+          title: 'Akamai'
+        });
+		var marker4 = new google.maps.Marker({
+          position: myLatLng4,
+          map: map,
+          title: 'Verizon'
+        });
+		var marker5 = new google.maps.Marker({
+          position: myLatLng5,
+          map: map,
+          title: 'Trip Advisor'
+        });
+      }
+	  
+	 
+    </script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+</script>
+
+
 </head>
 
 <body>
@@ -100,11 +185,65 @@ p2{
 
 <p2> "I think it's very important to get more women into computing. My slogan is: Computing is too important to be left to men."
 — Karen Spärck Jones, Professor of Computers and Information at Cambridge Computer Laboratory.</p2>
+
+<h1 class="opp"> Opportunities:</h1>
+<p3> The following places are locations in which free 7-week Girls Who Code summer-immersion programs are held. There are several opportunities for rising junior and senior girls to get involved in coding with the support of girls that embody the same passions as them. In addition, there are several Girls Who Code clubs held in libraries, schools, along with other locations. For more information, please check out 
+<a href="https://girlswhocode.com/clubs/">https://girlswhocode.com/clubs/</a>. </p3>
 </div>
 
+<div id="map"></div>
+<div class="Resources">
 
+<h1> Resources:</h1>
 
+<a href="https://girlswhocode.com/clubs/">Girls Who Code</a>
+<br>
+<a href="https://www.codecademy.com/">Code Acadmeny</a>
+</div>
 
+<h1 class="Role"> Role Models:</h1>
+<div class="youtube" id="player">
+<script>
+ var tag = document.createElement('script');
 
-</body>
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+	  
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '500',
+          videoId: 'fC9da6eqaqg',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+	
+	  </script>
+
+</div>
+<div class="more">
+<h3> For a video about Girls Who Code, check out the following links:</h3>
+<p> <a href="https://www.youtube.com/watch?v=GKLjkH31DYA">Inspirational stories about the summer-immersion program!</a>
+</p>
+</div>
+</body> 
 </html>
