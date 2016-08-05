@@ -12,6 +12,12 @@ ul {
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+.text{
+	text-align: center;
+	transform:translate(200px,-500px);
+	display:inline-block; 
+	margin-right: 700px;
+}
 li a {
     display: block;
     color: #000;
@@ -48,11 +54,114 @@ h2{
 	border-color:#B8417C;
 	font-family: 'Lemonada', cursive;
 }
+p1{
+	text-align: center;
+	float:center;
+	 word-wrap: break-word;
+
+}
+p2{
+	text-align: center;
+	float:left;
+	 word-wrap: break-word;
+
+}
+.comp1{
+	position:relative;
+	margin: 0px auto;
+    margin-left: 1100px;
+	top:-220px;
+	transform:scaleX()
+}
+.opp{
+	line-height: 300%;
+	
+}
+ html, body {
+        height: 100%;
+        margin: auto;
+        padding: 0;
+      }
+      #map {
+        height: 500px;
+		width:700px;
+		transform:translate(40%,-50%);
+	  }
+.Resources{
+	text-align: center;
+	
+}
+.Role{
+	text-align: center;
+}
+.youtube{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.map{
+	text-align: center;
+}
+.more{
+	text-align:center;
+}
+.p2{
+	font-style:italic;
+}
 
 </style>
 
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Girls CAN be in charge!</title>
+    <script>
+
+      function initMap() {
+        var myLatLng = {lat: 42.35939, lng: -71.09395}; 
+		var myLatLng2 ={lat: 42.37444, lng: -71.11694}; 
+		var myLatLng3 ={lat: 42.3496, lng:-71.0997}; 
+		var myLatLng4 ={lat: 42.4058, lng:-71.12027}; 
+		var myLatLng5 ={lat: 42.33802, lng:-71.17108}; 
+		
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'MIT leadership institute'
+        });
+		var marker2 = new google.maps.Marker({
+          position: myLatLng2,
+          map: map,
+          title: 'Harvard leadership institute'
+        });
+		var marker3 = new google.maps.Marker({
+          position: myLatLng3,
+          map: map,
+          title: 'Boston University leadership institute'
+        });
+		var marker4 = new google.maps.Marker({
+          position: myLatLng4,
+          map: map,
+          title: 'Tufts leadership institute'
+        });
+		var marker5 = new google.maps.Marker({
+          position: myLatLng5,
+          map: map,
+          title: 'Boston College leadership institute'
+        });
+      }
+	  
+	 
+    </script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+</script>
 </head>
 
 <body>
@@ -69,5 +178,78 @@ h2{
 </ul>
 <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet"> 
 
+<link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet"> 
+<img class="comp1" src="leadership.jpg">
+<div class="text">
+<p1> According to Business Insider, at the lowest levels, more than half of the employees in organizations are female. As you move to each successively higher level in the organization, the number of women steadily shrinks. At the CEO level, worldwide, there are only 3% to 4% who are women. We believe that women can and must take charge within higher levels in order to change perspectives and the way in which women are perceived within our world.
+<br> 
+
+<div class="p2">
+<p3> "Women are leaders everywhere you look, from a CEO to a housewife that holds together a home. Our country was built by women who stand alone."
+</div>
+-Denise Clark, member of The CLark Sisters</p3>
+
+
+<h1 class="opp"> Opportunities:</h1>
+<p3> The following universities hold three week-long leadership institutes in which high school students are encouraged to be leaders through regular self-guidance activities. These students may chose a topic of study in which they are passionate about and develop leadership skills while developing the skills required to succeed in their future careers. Check out the following link for more information and sign-up details:<br>
+<a href="http://bostonleadershipinstitute.com/boston.html">Boston Leadership Institutes</a>. </p3>
+</div>
+
+<div id="map"></div>
+<div class="Resources">
+
+<h1> Resources:</h1>
+
+<a href="https://www.mindtools.com/ ">Online Leadership Training</a>
+<br>
+<a href="#"></a>
+<a href="https://www.psychologytoday.com/blog/the-athletes-way/201507/5-strategies-reduce-gender-bias-against-girls-leaders ">Tips to break down the gender-bias against girls as leaders</a></div>
+
+<h1 class="Role"> Role Models:</h1>
+<div class="youtube" id="player">
+<script>
+ var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+	  
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '500',
+          videoId: 'Du_a0CCJkWE',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+	
+	  </script>
+
+</div>
+<div class="more">
+<h3> For more videos about being a leader check out the following links:</h3>
+<p> <a href="https://www.youtube.com/watch?v=db0TdCfb7ZQ"> Tips for Women in Leadership by Eleanor Shakiba</a>
+<p> <a href="https://www.youtube.com/watch?v=_l6gTsPwnQs"> Women leaders share the best advice they've ever learnt</a>
+<p> <a href="http://www.ted.com/talks/sheryl_sandberg_why_we_have_too_few_women_leaders?language=en"> Sheryl Sandberg talks about why we have very few women leader</a>
+</p>
+</div>
 </body>
 </html>
