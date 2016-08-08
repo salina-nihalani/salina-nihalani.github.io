@@ -47,7 +47,7 @@ li a:hover:not(.active) {
 }
 
 body{
-	background-color:#F7C8CF;
+	background-image:url(pink6.jpg);
 }
 h2{
     border-style: double;
@@ -69,11 +69,11 @@ p2{
 
 }
 .comp1{
-	position:relative;
 	margin: 0px auto;
-    margin-left: 1100px;
+	margin-left: 885px;
+	position:relative;
 	top:-220px;
-	transform:scaleX()
+	transform:scaleX();
 }
 .opp{
 	line-height: 300%;
@@ -182,13 +182,19 @@ p2{
 <img class="comp1" src="code.png">
 <div class="text">
 <p1> According to Girls Who Code, of the 1.4 million computing related jobs available by 2020, women are projected to only fill in 3%.</p1>
-
-<p2> "I think it's very important to get more women into computing. My slogan is: Computing is too important to be left to men."
-— Karen Spärck Jones, Professor of Computers and Information at Cambridge Computer Laboratory.</p2>
+<style>
+p.italic {
+		font-style: italic;
+}
+</style>
+<p class="italic"> "I think it's very important to get more women into computing. My slogan is: Computing is too important to be left to men." </p>
+— Karen Spärck Jones, Professor of Computers and Information at Cambridge Computer Laboratory.
 
 <h1 class="opp"> Opportunities:</h1>
-<p3> The following places are locations in which free 7-week Girls Who Code summer-immersion programs are held. There are several opportunities for rising junior and senior girls to get involved in coding with the support of girls that embody the same passions as them. In addition, there are several Girls Who Code clubs held in libraries, schools, along with other locations. For more information, please check out 
-<a href="https://girlswhocode.com/clubs/">https://girlswhocode.com/clubs/</a>. </p3>
+<p3>  During these 7 weeks, rising Juniors and Seniors explore programing languages such as Scratch, Python, HTML, CSS, JavaScript and have experience instructing a robot for free! The curriculum is intended to interest and promote young women like us to be involved with Computer Science. The following places are locations in which Girls Who Code summer-immersion programs are held. In addition, there are several Girls Who Code clubs held in libraries, schools, along with other locations. For more information, please check out 
+<a href="https://girlswhocode.com/clubs/">https://girlswhocode.com/clubs/</a>. 
+Oh and did we mention, girls can code?!
+</p3>
 </div>
 
 <div id="map"></div>
@@ -226,7 +232,7 @@ p2{
       function onPlayerReady(event) {
         event.target.playVideo();
       }
-            var done = false;
+      var done = false;
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
           setTimeout(stopVideo, 0);
@@ -247,3 +253,4 @@ p2{
 </div>
 </body> 
 </html>
+
