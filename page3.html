@@ -1,0 +1,107 @@
+
+<!DOCTYPE html> 
+<html>
+<head>
+<title> Resume </title>
+
+<style>
+body{
+	animation:paused;
+	font-size:16px; 
+	color: #D70CC3;
+	align-content: center;
+	margin: auto;
+	alignment-adjust:middle; 
+	background-color:#ffecf2;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #B497C5;
+}
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+li:last-child {
+    border-right: none;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #8C8B8B;
+}
+.active {
+    background-color: #9D18A0;
+}
+	
+	h1{
+	text-align: center;
+        
+}
+    h2{ 
+    text-align:center;
+
+}
+p{
+	text-align: center;
+}
+input{
+	color: #D70CC3;
+	position: relative;
+	margin:auto;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.purple {
+	background-color: #C9B9CF;
+	
+}
+    .center{
+        align-items: center; 
+    }
+</style>
+    
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("resumeFINAL.html"); 
+    });
+    </script> 
+
+</head>
+
+<body>
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="page2.html">About Me</a></li>
+  <li><a class= "active" href="page3.html">Resume </a></li>
+  <li><a href="page4.html">Projects</a></li>
+ <li class="purple" style="float:right"><a href="page5.html">Contact</a></li>
+</ul>
+
+<div id="includedContent"></div>
+    
+    <img class= "center" src="file:///Users/SalinaNihalani/Documents/resumePG1.jpg" alt="Resume Part 1" style="width:1400px;height:1800px;"> 
+    <img class= "center" src="file:///Users/SalinaNihalani/Documents/resumePG2.jpg" alt="Resume Part 2" style="width:1400px;height:1800px;"> 
+    <img class= "center" src="file:///Users/SalinaNihalani/Documents/resumePG3.jpg" alt="Resume Part 3" style="width:1400px;height:1800px;"> 
+    
+    
+    
+</body>
+
+</html>
+    
+
+

@@ -1,0 +1,179 @@
+
+<!DOCTYPE html> 
+<html>
+<head>
+<title> Projects </title>
+
+<style>
+body{
+	animation:paused;
+	font-size:16px; 
+	color: #D70CC3;
+	align-content: center;
+	margin: auto;
+	alignment-adjust:middle; 
+	background-color:#ffecf2;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #B497C5;
+}
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+li:last-child {
+    border-right: none;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #8C8B8B;
+}
+.active {
+    background-color: #9D18A0;
+}
+	
+	h1{
+	text-align: center;
+        
+}
+    h2{ 
+    text-align:center;
+
+}
+p{
+	text-align: center;
+}
+input{
+	color: #D70CC3;
+	position: relative;
+	margin:auto;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.purple {
+	background-color: #C9B9CF;
+	
+}
+    .center{
+        align-content: center; 
+    }
+</style>
+    <script>
+	 function myFunction(){
+		 var image = document.getElementById("picture2");
+		 image.src = "GWC2.jpg";
+	 }
+	</script>
+
+</head>
+
+<body>
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="page2.html">About Me</a></li>
+  <li><a href="page3.html">Resume </a></li>
+  <li><a class= "active" href="page4.html">Projects</a></li>
+ <li class="purple" style="float:right"><a href="page5.html">Contact</a></li>
+</ul>
+
+<p> I have enjoyed dancing since a very early age, having taken part in several competitions and cultural shows! </p>
+
+    <div id="player1" class="center" ></div>
+
+    <script>
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player1;
+      function onYouTubeIframeAPIReady() {
+        player1 = new YT.Player1('player1', {
+          height: '390',
+          width: '640',
+          videoId: 'ItQLsu0B98Q',
+          events: {
+            'onReady': onPlayer1Ready,
+            'onStateChange': onPlayer1StateChange
+          }
+        });
+      }
+        
+      function onPlayer1Ready(event) {
+        event.target.playVideo();
+      }
+
+      var done = false;
+      function onPlayer1StateChange(event) {
+        if (event.data == YT.Player1State.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player1.stopVideo();
+      }
+    </script>
+    
+    <p> I have always encompassed an entrepreneurial spirit, longing to innovate while making a positive impact on the lives of those around me. In particular, I was the CFO in a mock business thats' aim was to create health wearables which will aid in detecting various health problems at or before their onset. In addition, I created a website that aims at breaking the gender gaps in today's modern society. </p>
+    
+     <div id="player" class="center" ></div>
+
+    <script>
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'wjLkNh_Rb9g',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+        
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+    
+    <div class= "center">
+    <a href= "https://shatteringstereotypes.github.io/" target= "_blank">Shattering Stereotypes Website </a> 
+        </div>
+</body>
+
+</html>
+    
+
+
