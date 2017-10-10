@@ -71,12 +71,7 @@ img{
         align-content: center; 
     }
 </style>
-    <script>
-	 function myFunction(){
-		 var image = document.getElementById("picture2");
-		 image.src = "GWC2.jpg";
-	 }
-	</script>
+    
 
 </head>
 
@@ -92,42 +87,10 @@ img{
 
 <p> I have enjoyed dancing since a very early age, having taken part in several competitions and cultural shows! </p>
 
-    <div id="player1" class="center" ></div>
+   
+    <iframe width="420" height="345" src="https://www.youtube.com/edit?o=U&video_id=ItQLsu0B98Q">
+</iframe>
 
-    <script>
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-      var player1;
-      function onYouTubeIframeAPIReady() {
-        player1 = new YT.Player1('player1', {
-          height: '390',
-          width: '640',
-          videoId: 'ItQLsu0B98Q',
-          events: {
-            'onReady': onPlayer1Ready,
-            'onStateChange': onPlayer1StateChange
-          }
-        });
-      }
-        
-      function onPlayer1Ready(event) {
-        event.target.playVideo();
-      }
-
-      var done = false;
-      function onPlayer1StateChange(event) {
-        if (event.data == YT.Player1State.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player1.stopVideo();
-      }
-    </script>
     
     <p> I have always encompassed an entrepreneurial spirit, longing to innovate while making a positive impact on the lives of those around me. In particular, I was the CFO in a mock business thats' aim was to create health wearables which will aid in detecting various health problems at or before their onset. In addition, I created a website that aims at breaking the gender gaps in today's modern society. </p>
     
