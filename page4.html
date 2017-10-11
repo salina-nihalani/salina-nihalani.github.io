@@ -91,45 +91,18 @@ img{
   <iframe width="420" height="345" src="https://www.youtube.com/embed/ItQLsu0B98Q" >
 </iframe> 
 	</div> 
+	
+	
     
     <p> I have always encompassed an entrepreneurial spirit, longing to innovate while making a positive impact on the lives of those around me. In particular, I was the CFO in a mock business thats' aim was to create health wearables which will aid in detecting various health problems at or before their onset. In addition, I created a website that aims at breaking the gender gaps in today's modern society. </p>
     
-     <div id="player" class="center" ></div>
+    <div style="text-align: center">
+ 
+    <iframe width="420" height="345" src="https://www.youtube.com/embed/wjLkNh_Rb9g&t=3s" >
+</iframe>
 
-    <script>
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '390',
-          width: '640',
-          videoId: 'wjLkNh_Rb9g',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-        
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
-
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
-    </script>
+    </div>
+    
     
     <div class= "center">
     <a href= "https://shatteringstereotypes.github.io/" target= "_blank">Shattering Stereotypes Website </a> 
