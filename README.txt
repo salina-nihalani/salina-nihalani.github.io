@@ -1,1 +1,2 @@
-# shattering-stereotypes.github.io
+# salina-nihalani.github.io
+Welcome to my personal portfolio! 
